@@ -26,14 +26,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+forEach() - Is mutable and it has to go true every item in the array.
+
+map() - Returns a new array with the results of the function passed in.
+
 2. Explain the difference between a callback and a higher order function.
+
+HOF - takes a callback function in.
+
+callback - is the function that is been taken in.
 
 3. What is closure?
 
+    Its a combination of a function bundeled together to its lexical environment.
+
 4. Describe the four rules of the 'this' keyword.
+  1. Golbal - this is looking at window
+  2. Implict - this is looking at left of '.'
+  3. Explicit - this is looking at the passed in func.
+  4. new - this is looking at the new instance of the passed in constructor.
 
 5. Why do we need super() in an extended class?
-
+    To access and call functions on an object's parent. as in using its methods or passing its  propertys to the new subclass
 ### Task 1 - Project Set up
 
 Follow these steps to set up and work on your project:
