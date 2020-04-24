@@ -34,16 +34,18 @@ myFunction();
 
 // IF SUMMATION DOES REQUIRE CLOSURE
 function summation (num){
-  let counter = 0
-  function process(){
+  
+  let counter = 0;
+  return function process(){
     for (let i=0; i<num; i++){
       counter += num - i
     } 
     return counter;
   }
-  return process();
 }
-const s4 = summation(4);
-console.log(s4);  
-console.log(counter); /* This showys the counter is not accesible outside  summation.
-
+let s4 = summation(4);
+console.log(s4());  
+console.log(s4());
+// s4 = summation(s4());
+console.log(`This is the summation ${s4}`);  
+console.log(counter); /* This showys the counter is not accesible outside  summation.*/
