@@ -45,5 +45,5 @@ function summation (num){
 }
 const s4 = summation(4);
 console.log(s4);  
-console.log(counter);
+console.log(counter); /* This showys the counter is not accesible outside  summation.
 

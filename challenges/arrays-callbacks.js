@@ -23,7 +23,7 @@ displayNames will be an array of strings, and each string should follow this pat
 */
 const displayNames = [];
 zooAnimals.forEach(element=>{displayNames.push(`Name: ${element.animal_name}, Scientific: ${element.scientific_name}.`)});
-// console.log(displayNames);
+console.log(displayNames);
 
 /* Request 2: .map()
 
@@ -33,7 +33,7 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 
 
 const lowCaseAnimalNames = zooAnimals.map(element => {return element.animal_name.toLowerCase()});
-// console.log(lowCaseAnimalNames);
+console.log(lowCaseAnimalNames);
 
 /* Request 3: .filter() 
 
@@ -41,7 +41,7 @@ The zoos are concerned about animals with a lower population count. Using filter
 
 */
 const lowPopulationAnimals = zooAnimals.filter(element=>{return element.population < 5});
-// console.log(lowPopulationAnimals);
+console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
 
@@ -49,7 +49,7 @@ The zoos need to know their total animal population across the United States. Fi
 
 */
 const populationTotal = zooAnimals.reduce((acc, cur) => {/*console.log(acc);*/ return acc + cur.population}, 0);
-// console.log(populationTotal);
+console.log(populationTotal);
 
 
 // ==== Callbacks ====  
@@ -72,9 +72,9 @@ const multiply = (a, b) => {return a * b};
 const greeting = (first, last) => {return `Hello ${first} ${last}, nice to meet you!`};
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// console.log(consume(2, 2, add)); // 4
-// console.log(consume(10, 16, multiply)); // 160
-// console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+console.log(consume(2, 2, add)); // 4
+console.log(consume(10, 16, multiply)); // 160
+console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
 
 

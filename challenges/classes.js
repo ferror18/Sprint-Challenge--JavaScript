@@ -26,8 +26,8 @@ class CubeMaker extends CuboidMaker2{
 }
 const cuboid2 = new CuboidMaker2(4, 5, 5);
 const cube = new CubeMaker(5, 5, 5);
-// console.log(cube.volume());
-// console.log(cube.surfaceArea());
+console.log(cube.volume());
+console.log(cube.surfaceArea());
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
 // console.log(cuboid2.volume()); // 100
